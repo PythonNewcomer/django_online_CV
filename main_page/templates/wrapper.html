@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CV website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load staticfiles %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	body {
+		font: 20px Montserrat, sans-serif;
+		background-color: #2f2f2f;
+		}
+	.margin {
+		margin-left: 45px;
+		margin-top: 30px;
+		}
+	.back {
+		background-image: url("/static/images/cv/workplace.jpg");
+		background-repeat: no-repeat;
+		background-size: contain;
+		}
+	.main {
+		background-color: #2f2f2f;
+		color: #ffffff;
+		line-height: 1.8;
+		}
+	.footer {
+		background-color: #2f2f2f;
+		color: #fff;
+		}
+	.container-fluid {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		}
+	.progress {
+		height: 14px;
+		}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <ul class="nav navbar-nav">
+    <li><a href="#aboutme">ABOUT ME</a></li>
+    <li><a href="#experience">EXPERIENCE</a></li>
+		<li><a href="#skills">SKILLS</a></li>
+		<li><a href="#education">EDUCATION</a></li>
+  </ul>
+	<ul class="nav navbar-nav navbar-right">
+    <li style="margin-right:30px"><a href="contactme/"> CONTACT ME <span class="glyphicon glyphicon-menu-right"></span></a></li>
+		<li style="margin-right:30px"><a href="/static/docs/Omelinska_CV.docx"> Download CV <span class="glyphicon glyphicon-download-alt"></span></a></li>
+	</ul>
+</nav>
+{% block content %}
+
+{% endblock %}
+<footer class="container-fluid footer text-center">
+  <p>Made by Tetiana Omelinska</p>
+</footer>
+</body>
+</html>

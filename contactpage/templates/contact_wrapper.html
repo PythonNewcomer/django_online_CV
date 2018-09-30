@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CV website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% load staticfiles %}
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	body {
+		font: 20px Montserrat, sans-serif;
+		background-color: #2f2f2f;
+		}
+	.margin {
+		margin-left: 45px;
+		margin-top: 30px;
+		}
+	.main {
+		background-color: #2f2f2f;
+		color: #ffffff;
+		line-height: 1.8;
+		}
+	.footer {
+		background-color: #2f2f2f;
+		color: #fff;
+		}
+	.container-fluid {
+		padding-top: 70px;
+		padding-bottom: 70px;
+		}
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<ul class="nav navbar-nav">
+    <li style="margin-left:30px"><a href="http://127.0.0.1:8000/"><span class="glyphicon glyphicon-menu-left"></span> BACK </a></li>
+	</ul>
+</nav>
+{% block content %}
+
+{% endblock %}
+<footer class="container-fluid footer text-center">
+  <p>Made by Tetiana Omelinska</p>
+</footer>
+</body>
+</html>
